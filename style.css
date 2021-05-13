@@ -1,0 +1,328 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color:#4E5150;
+    margin: 3% 0 0 15%;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+.left-side{
+    width: 40%;    
+    margin-left: 15%;
+}
+.left-side h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color:#333333;
+    margin: 7% 0 3% 0;
+}
+label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color:#4F4F4F;
+    margin-bottom: 1%;
+}
+input,  input:focus{
+    border: none;
+    outline: none;
+   
+    
+}
+.input-box{
+    border: 1px solid #828282;
+    border-radius: 12px;
+    width: 100%;
+    height: 48px;
+    display:flex;
+}
+.input-box select{
+    background: transparent;
+    border: none;
+    width: 70%;
+}
+.input-box select:focus{ 
+    outline: none;
+}
+.container{
+    display: flex;    
+    
+}
+.item-1{
+    width: 50%;
+    margin-right: 2%;
+}
+.item-2{
+    width: 50%;
+}
+
+ input{
+    font-family: 'Montserrat', sans-serif;    
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color:#333333;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    
+}
+ input::placeholder, select {
+    font-family: 'Montserrat', sans-serif;      
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 36px;
+    color:#828282;
+}
+#checkbox{ 
+    display: inline-block;
+    width: 10%;   
+    
+}
+
+.input-box span{
+    font-size: 18px;
+    height: 18px;
+    color:#828282;
+    display: inline-block;    
+    align-self: center;
+    margin:1%;
+    
+}
+ label{
+    display: inline-block;
+    margin-top: 5%;
+}
+button{
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    background-color: #F2994A;
+    color: #ffffff;
+    height: 48px;
+    width: 30%;
+    position: relative;
+    left:20%;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 2%;  
+
+    
+}
+button:hover{
+    opacity: 70%;   
+}
+
+.right-side{
+    width: 35%;
+    height: fit-content;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    margin: 1% auto;
+}
+.backbag, .shoes{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: repeat(4,1fr);
+    padding-left:5%;
+    column-gap: 5% ;
+}
+.backbag{
+    padding-top: 5%;
+}
+.right-side img{
+    width: 100%;
+    border-radius: 12px;    
+    grid-column: 1/2;  
+    grid-row: 1/4;  
+    
+}
+.backbag h4, .shoes h4{    
+    grid-column: 2/4;    
+    grid-row: 1/2;    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color:#4E5150;    
+}
+.price{
+    grid-column: 2/3;    
+    grid-row: 2/3;    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color:#F2994A;
+}
+.old-price{
+    grid-column: 3/4;    
+    grid-row: 2/3;    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: line-through;
+    color:#4E5150;
+}
+.quanty{
+    border: 1px solid #828282;
+    border-radius: 12px;
+    height: 50px;
+    width: 70%;
+    grid-column: 2/4;
+    grid-row: 3/5;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.quanty .number{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;    
+    color:#333333;
+}
+.quanty .material-icons{
+    background-color: #E0E0E0;
+    border-radius: 4px;
+    color: #828282;
+    font-size: 16px;
+    line-height: 20px;
+    height: 20px;
+    margin: 0 15%;
+    cursor: pointer;
+    
+}
+
+.shipping, .total{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;    
+    color:#333333;
+    display: flex;
+    justify-content: space-between;
+}
+.shipping h3, .total h3{
+    display: inline-block;
+    margin: 3% 5%;     
+}
+hr{
+    border:1px solid #BDBDBD;
+    width: 90%;
+    margin: auto;   
+    
+}
+footer{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    display: flex;   
+    justify-content: center;
+    align-items: flex-end;
+    height: 5rem;
+    color:#828282; 
+    margin: 2% 0;   
+}
+
+@media(max-width:950px){
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    header h1{
+        margin-left: 5%;
+    }
+    .left-side{
+        width: 90%;
+        margin:auto;   
+    }
+    .left-side h3{        
+        font-size: 14px;
+        line-height: 17px;
+        margin: 2% auto;
+        }
+    label{        
+        font-size: 10px;
+        line-height: 12px; 
+        margin-top: 2%;      
+    }       
+    
+     input{     
+        font-size: 12px;
+        line-height: 14px;    
+        
+    }
+     input::placeholder, select {      
+        font-size: 12px;
+        line-height: 14px;        
+    }
+      
+    .input-box span{
+        font-size: 14px;
+        height: 14px;  
+    }
+     button{    
+       left:10%;
+       width: fit-content;
+       padding: 2%;
+           
+    }
+   .right-side{
+        width: 90%;
+        height: fit-content;
+        margin-top: 5%;
+    }   
+    .right-side img{
+        width: 90%;       
+        
+    }
+    .backbag h4, .shoes h4{
+        font-size: 12px;
+        line-height: 14px;       
+    }
+    .price{        
+        font-size: 12px;
+        line-height: 14px;        
+    }
+    .old-price{       
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .quanty{
+        width:60%;
+        display: flex;
+        justify-content: center;
+    }
+    .quanty .number{    
+        font-size: 16px;
+        line-height: 18px; 
+    }     
+    .shipping, .total{      
+        font-size: 14px;
+        line-height: 16px;   
+    }
+  
+   
+    }
+    
+}
